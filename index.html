@@ -1,100 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QBH Marketing Agency</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>QBH Marketing Agency | Digital Growth & Creative Solutions</title>
+  <meta name="description" content="QBH Marketing Agency provides premium digital marketing, social media, web development, SEO, branding and creative solutions.">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Logo Intro -->
-<div id="intro">
-  <div class="intro-logo-box">
-    <img src="images/qbh-logo.jpg" alt="QBH Logo" id="introLogo">
-    <div class="intro-ring"></div>
-  </div>
-  <div class="intro-name">QBH <span>MARKETING AGENCY</span></div>
-</div>
+  <!-- Particle Background -->
+  <canvas id="particles"></canvas>
 
-<header class="navbar">
-  <a href="#" class="brand"><img src="images/qbh-logo.jpg" alt="QBH"></a>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#packages">Packages</a>
-    <a href="request.html">Request Service</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Header -->
+  <header class="header">
+    <a href="#home" class="logo">
+      <span class="logo-q">Q</span><span>BH</span>
+    </a>
 
-<main>
-<section id="home" class="hero">
-  <div class="hero-logo"><img src="images/qbh-logo.jpg" alt="QBH Marketing Agency"></div>
-  <p class="red-label">QBH MARKETING AGENCY</p>
-  <h1>Grow Your <span>YouTube.</span><br>Build Your Brand.</h1>
-  <p class="subtitle">Creative YouTube and digital marketing services that help your channel build a stronger online presence.</p>
-  <div class="buttons">
-    <a class="btn red" href="request.html">Request a Service</a>
-    <a class="btn dark" href="#packages">View Packages</a>
-  </div>
-</section>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-<section id="services" class="section">
-  <p class="red-label center">WHAT WE DO</p>
-  <h2>Our YouTube Services</h2>
-  <div class="service-grid">
-    <article><b>01</b><h3>Channel Strategy</h3><p>Clear direction for your channel, audience and content.</p></article>
-    <article><b>02</b><h3>Content Planning</h3><p>Content ideas and planning designed around your niche.</p></article>
-    <article><b>03</b><h3>Channel Optimization</h3><p>Improve your channel presentation and discoverability.</p></article>
-    <article><b>04</b><h3>Branding</h3><p>Build a consistent visual identity for your YouTube brand.</p></article>
-  </div>
-</section>
+    <a href="#contact" class="nav-btn">Get Started</a>
 
-<section id="packages" class="section packages">
-  <p class="red-label center">YOUTUBE PACKAGES</p>
-  <h2>Choose Your Package</h2>
-  <div class="package-grid">
-    <article class="package">
-      <h3>Starter</h3><div class="price">Custom</div>
-      <p>For channels starting their growth journey.</p>
-      <ul><li>Channel review</li><li>Content direction</li><li>Basic strategy</li><li>Consultation</li></ul>
-      <a class="btn red" href="request.html?package=Starter">Request</a>
-    </article>
-    <article class="package featured">
-      <span class="popular">POPULAR</span>
-      <h3>Growth</h3><div class="price">Custom</div>
-      <p>For channels ready to grow consistently.</p>
-      <ul><li>Channel optimization</li><li>Content strategy</li><li>SEO guidance</li><li>Growth consultation</li></ul>
-      <a class="btn red" href="request.html?package=Growth">Request</a>
-    </article>
-    <article class="package">
-      <h3>Pro</h3><div class="price">Custom</div>
-      <p>For serious creators and brands.</p>
-      <ul><li>Advanced strategy</li><li>Content planning</li><li>Brand positioning</li><li>Priority consultation</li></ul>
-      <a class="btn red" href="request.html?package=Pro">Request</a>
-    </article>
-  </div>
-</section>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
 
-<section class="cta">
-  <p class="red-label">READY TO GROW?</p>
-  <h2>Let's Build Your Channel.</h2>
-  <a class="btn red" href="request.html">Start a Request</a>
-</section>
-</main>
 
-<footer id="contact">
-  <img src="images/qbh-logo.jpg" alt="QBH">
-  <div>
-    <h3>QBH Marketing Agency</h3>
-    <p>YouTube • Digital Marketing • Branding</p>
-    <p>Email: <a href="mailto:YOUR_GMAIL@gmail.com">YOUR_GMAIL@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/YOUR_NUMBER">YOUR CONTACT NUMBER</a></p>
-  </div>
-  <small>© 2026 QBH Marketing Agency</small>
-</footer>
+  <!-- Hero -->
+  <section class="hero" id="home">
 
-<script src="script.js"></script>
+    <div class="hero-content">
+
+      <div class="hero-logo">
+        <div class="logo-circle">
+          <span>QBH</span>
+        </div>
+      </div>
+
+      <p class="tagline">DIGITAL MARKETING AGENCY</p>
+
+      <h1>
+        Build Your Brand.
+        <span>Grow Your Future.</span>
+      </h1>
+
+      <p class="hero-text">
+        We create powerful digital experiences, premium branding
+        and marketing strategies that help businesses grow.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="gold-btn">Get Started</a>
+        <a href="#portfolio" class="outline-btn">View Portfolio</a>
+      </div>
+
+    </div>
+
+    <div class="scroll-down">
+      <span></span>
+      Scroll Down
+    </div>
+
+  </section>
+
+
+  <!-- Stats -->
+  <section class="stats">
+
+    <div class="stat">
+      <h2 data-target="150">0</h2>
+      <p>Projects</p>
+    </div>
+
+    <div class="stat">
+      <h2 data-target="95">0</h2>
+      <p>Happy Clients</p>
+    </div>
+
+    <div class="stat">
+      <h2 data-target="8">0</h2>
+      <p>Services</p>
+    </div>
+
+    <div class="stat">
+      <h2 data-target="99">0</h2>
+      <p>Success Rate</p>
+    </div>
+
+  </section>
+
+
+  <!-- Services -->
+  <section class="section" id="services">
+
+    <div class="section-heading">
+      <p>WHAT WE DO</p>
+      <h2>Our <span>Services</span></h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-icon">🚀</div>
+        <h3>Digital Marketing</h3>
+        <p>
+          Strategic digital campaigns designed to increase your
+          reach, traffic and business growth.
+        </p>
+        <a href="#contact">Learn More →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Social Media Marketing</h3>
+        <p>
+          Creative social media strategies that build engagement
+          and turn followers into customers.
+        </p>
+        <a href="#contact">Learn More →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>Web Design & Development</h3>
+        <p>
+          Modern, responsive and high-performance websites
+          created for your brand.
+        </p>
+        <a href="#contact">Learn More →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🔍</div>
+        <h3>SEO Optimization</h3>
+        <p>
+          Improve your search visibility and attract more
+          organic visitors to your website.
+        </p>
+        <a href="#contact">Learn More →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>Branding & Identity</h3>
+        <p>
+          Premium brand identities that make your business
+          recognizable and memorable.
+        </p>
+        <a href="#contact">Learn More →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🎥</div>
+        <h3>Video Editing & Animation</h3>
+        <p>
+          Engaging videos, motion graphics and animations
+          designed to capture attention.
+        </p>
+        <a href="#contact">Learn More →</a>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- About -->
+  <section class="about section" id="about">
+
+    <div class="about-image">
+      <div class="about-glow">
+        <span>QBH</span>
+      </div>
+    </div>
+
+    <div class="about-content">
+
+      <p class="small-title">WHY QBH?</p>
+
+      <h2>
+        We Don't Just Market.
+        <span>We Build Brands.</span>
+      </h2>
+
+      <p>
+        QBH Marketing Agency combines creativity, technology and
+        strategy to create digital solutions that make brands
+        stand out.
+      </p>
+
+      <div class="features">
+        <div>✓ Creative Strategies</div>
+        <div>✓ Premium Design</div>
+        <div>✓ Data Driven Marketing</div>
+        <div>✓ Client Focused Results</div>
+      </div>
+
+      <a href="#contact" class="gold-btn">Work With Us</a>
+
+    </div>
+
+  </section>
+
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+
+    <div class="section-heading">
+      <p>OUR WORK</p>
+      <h2>Creative <span>Portfolio</span></h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card">
+        <div class="portfolio-placeholder">
+          <span>BRANDING</span>
+        </div>
+        <h3>Premium Brand Identity</h3>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-placeholder">
+          <span>SOCIAL MEDIA</span>
+        </div>
+        <h3>Social Media Campaign</h3>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-placeholder">
+          <span>WEB DESIGN</span>
+        </div>
+        <h3>Modern Business Website</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <p>READY TO GROW?</p>
+
+    <h2>
+      Let's Create Something
+      <span>Extraordinary.</span>
+    </h2>
+
+    <a href="#contact" class="gold-btn">Get a Quote</a>
+
+  </section>
+
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+
+    <div class="section-heading">
+      <p>CONTACT US</p>
+      <h2>Let's <span>Talk</span></h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="contact-box">
+
+      <div>
+        <h3>Start Your Project</h3>
+        <p>
+          Tell us about your project and let's discuss
+          how QBH can help your business grow.
+        </p>
+
+        <p class="contact-info">
+          📧 info.qbh.marketing.agency@gmail.com
+        </p>
+
+        <p class="contact-info">
+          📱 03133935574
+        </p>
+      </div>
+
+      <form id="contactForm">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <input type="text" placeholder="Your Service" required>
+
+        <textarea placeholder="Tell us about your project" rows="5"></textarea>
+
+        <button type="submit" class="gold-btn">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="footer-logo">
+      QBH <span>MARKETING AGENCY</span>
+    </div>
+
+    <p>
+      © 2026 QBH Marketing Agency. All Rights Reserved.
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
 </body>
 </html>
